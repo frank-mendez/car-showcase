@@ -50,6 +50,11 @@ export interface CustomButtonProps {
 	handleClick?: MouseEventHandler<HTMLButtonElement>
 }
 
+export interface SearchManuFacturerProps {
+	selected: string
+	setSelected: (selected: string) => void
+}
+
 export interface OptionProps {
 	title: string
 	value: string
@@ -64,9 +69,4 @@ export interface ShowMoreProps {
 	pageNumber: number
 	isNext: boolean
 	setLimit: (limit: number) => void
-}
-
-export interface SearchManuFacturerProps {
-	selected: string
-	setSelected: (selected: string) => void
 }
