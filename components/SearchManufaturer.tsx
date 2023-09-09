@@ -15,7 +15,7 @@ const SearchManufaturer = ({ manufacturer, setManufacturer }: SearchManufacturer
 			: manufacturers.filter((item: string) => item.toLowerCase().replace(/\s+/g, '').includes(query.toLowerCase().replace(/\s+/g, '')))
 
 	return (
-		<div className='search-manifacturer'>
+		<div className='search-manufacturer'>
 			<Combobox value={manufacturer} onChange={setManufacturer}>
 				<div className='relative w-full'>
 					<Combobox.Button className='absolute top-[14px]'>
