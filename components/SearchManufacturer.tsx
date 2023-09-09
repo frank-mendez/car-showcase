@@ -52,7 +52,7 @@ const SearchManufacturer = ({ selected, setSelected }: SearchManuFacturerProps) 
 							{/* If there are no filtered manufacturers and the query is not empty, show an option to create a new manufacturer */}
 							{filteredManufacturers.length === 0 && query !== '' ? (
 								<Combobox.Option value={query} className='search-manufacturer__option'>
-									Create "{query}"
+									Create {query}
 								</Combobox.Option>
 							) : (
 								// Display the filtered manufacturers as options
